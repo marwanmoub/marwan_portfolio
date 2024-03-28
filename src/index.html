@@ -6,13 +6,13 @@
     <title>Small Portfolio</title>
     <link rel="stylesheet" href="../src/output.css">
 </head>
-<body class="font-mono">
+<body class="font-mono w-full min-h-full dark:bg-black">
     <header class="px-32 py-10 dark:bg-black">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center flex-shrink-0">
             <p id="name" class="font-extrabold text-2xl dark:text-white">Marwan Moubayed</p>
 
             <input type="text" id="email" name="email" placeholder="Enter Your Email"
-            class="bg-gray-200 w-1/4 focus:outline-none pl-6 py-3 placeholder:text-slate-700 rounded-full"
+            class="bg-gray-200 w-1/4 focus:outline-none pl-6 py-3 pr-6 placeholder:text-slate-700 rounded-full shrink-0"
             >
 
             <button class="bg-gray-800 text-white rounded px-11 py-3 dark:bg-transparent dark:text-white dark:border-solid
@@ -24,21 +24,34 @@
                 <p class="dark:text-white">MASTER THE FIELD</p>
             </div>
 
-            <div class="ml-96 flex items-center translate-x-28">
-                <ul class="flex items-center gap-16 p-2">
-                    <li class="cursor-pointer group">ABOUT ME </li>
-                    <li>SERVICES</li>
-                    <li>PORTFOLIO</li>
-                </ul>
+            <div class="ml-96 flex items-center translate-x-28 shrink dark:text-white">
+                <ul class="group dark:group-hover flex items-center gap-16 p-2">
+                    <li class="cursor-pointer hover:bg-gray-200 transition-all duration-100 rounded-md p-2 min-w-max dark:hover:bg-white dark:hover:text-black">ABOUT ME</li>
+                    <li class="cursor-pointer hover:bg-gray-200 transition-all duration-300 rounded-md p-2 min-w-max dark:hover:bg-white dark:hover:text-black">SKILLS</li>
+                    <li class="cursor-pointer hover:bg-gray-200 transition-all duration-300 rounded-md p-2 min-w-max dark:hover:bg-white dark:hover:text-black">PORTFOLIO</li>
+                    <li class="cursor-pointer hover:bg-gray-200 transition-all duration-300 rounded-md p-2 min-w-max dark:hover:bg-white dark:hover:text-black">PROJECTS</li>
+                    <li class="cursor-pointer hover:bg-gray-200 transition-all duration-300 rounded-md p-2 min-w-max dark:hover:bg-white dark:hover:text-black">CONTACT ME</li>
+                  </ul>
             </div>
-
-            <ul class="flex items-center gap-16 p-2 ml-auto">
-                <li>PROJECTS</li>
-                <li>CONTACT ME</li>
-            </ul>
 
         </div>
     </header>
+
+    <main class="bg-gray-200 px-32 pt-10 pb-40 mx-32 rounded-lg min-w-fit flex gap-16 dark:bg-[#0c0c0c]">
+        <div class="flex-col space-y-16">
+            <div class="min-w-fit shadow-2xl hover:-translate-y-2 transition-all duration-200 bg-white rounded-md flex justify-center ring-black p-4 font-extrabold">ABOUT ME</div>
+            <h1 class="dark:text-white font-extrabold text-6xl min-w-fit">Hello, I'm Marwan Moubayed</h1>
+        </div>
+
+        <div class="flex-col space-y-8">
+            <h1 class="font-extrabold text-3xl dark:text-white">A Programmer that Will Become at the Top. Based in Tripoli, Lebanon.</h1>
+            <p class="dark:text-white">A Programmer entrepreneur that is looking to become at the top with a business mindset.</p>
+            <div class="flex gap-8">
+                <button class="text-white p-6 bg-black rounded-lg text-xl dark:bg-white dark:text-black font-extrabold">CONTACT ME</button>
+                <button class="text-black p-6 border border-black rounded-lg text-xl dark:bg-white dark:text-black font-extrabold">SEE MY WORK</button>
+            </div>
+        </div>
+    </main>
 
     <script>
         const toggleDarkBtn = document.getElementById('toggleDark');
