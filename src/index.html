@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <div class="font-mono dark:bg-black"> <!--MAIN WRAPPER CLASS-->
+    <div class="font-mono dark:bg-black relative overflow-hidden"> <!--MAIN WRAPPER CLASS-->
         <header class="px-32 py-10 dark:bg-black">
             <div class="flex justify-between items-center flex-shrink-0">
                 <p id="name" class="font-extrabold text-2xl dark:text-white">Marwan Moubayed</p>
@@ -27,7 +27,7 @@
                     <p class="dark:text-white">MASTER THE FIELD</p>
                 </div>
     
-                <div class="ml-96 flex items-center translate-x-28 shrink dark:text-white">
+                <div class="ml-96 flex items-center translate-x-28 shrink dark:text-white" id="navigation">
                     <ul class="group dark:group-hover flex items-center gap-16 p-2">
                         <li class="cursor-pointer hover:bg-gray-200 transition-all duration-100 rounded-md p-2 min-w-max dark:hover:bg-white dark:hover:text-black">ABOUT ME</li>
                         <li class="cursor-pointer hover:bg-gray-200 transition-all duration-300 rounded-md p-2 min-w-max dark:hover:bg-white dark:hover:text-black">SKILLS</li>
@@ -57,7 +57,7 @@
         </main>
     
         <div class="mx-32 flex min-w-fit items-center mt-10">
-            <div class="skills-section dark:bg-white border dark:border-black dark:text-black">SKILLS</div>
+            <div class="skills-section dark:bg-white border dark:border-black dark:text-black sticky top-0 z-10">SKILLS</div>
         </div>
     
         <div class="flex gap-16 items-center overflow-hidden px-32 py-10 justify-around md:">
@@ -115,38 +115,155 @@
         </div>
     
         <div class="flex items-center my-10 px-32">
-            <div class="skills-section py-10 dark:bg-white border dark:border-black dark:text-black">The Odin PROJECTS</div>
+            <div class="skills-section py-10 dark:bg-white border dark:border-black dark:text-black sticky top-0 z-10 TOP">The Odin PROJECTS</div>
         </div>
 
-        <div class=" dark:text-white max-w-full px-32">
-            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10">
+        <div class=" dark:text-white max-w-full px-32" style="margin-bottom: 5rem;">
+            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10 hover:-translate-y-2 transition-all duration-200 dark:text-black dark:bg-white dark:border-black dark:border">
                 <a href="https://weather-app-marwans-projects-8251be88.vercel.app/">Weather App</a>
             </div>
-            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10">
+            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10 hover:-translate-y-2 transition-all duration-200 dark:text-black dark:bg-white dark:border-black dark:border">
                 <a href="https://weather-app-marwans-projects-8251be88.vercel.app/">To Do</a>
             </div>
-            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10">
+            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10 hover:-translate-y-2 transition-all duration-200 dark:text-black dark:bg-white dark:border-black dark:border">
                 <a href="https://weather-app-marwans-projects-8251be88.vercel.app/">Library</a>
             </div>
-            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10">
+            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10 hover:-translate-y-2 transition-all duration-200 dark:text-black dark:bg-white dark:border-black dark:border">
                 <a href="https://weather-app-marwans-projects-8251be88.vercel.app/">BattleShip</a>
             </div>
-            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10">
+            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10 hover:-translate-y-2 transition-all duration-200 dark:text-black dark:bg-white dark:border-black dark:border">
                 <a href="https://weather-app-marwans-projects-8251be88.vercel.app/">TicTacToe</a>
             </div>
-            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center py-10">
+            <div class="shadow-2xl ring-2 ring-slate-900 flex items-center justify-center rps py-10 hover:-translate-y-2 transition-all duration-200 dark:text-black dark:bg-white dark:border-black dark:border">
                 <a href="https://weather-app-marwans-projects-8251be88.vercel.app/">Rock Paper Scissors</a>
             </div>
 
         </div>
 
+        <div style="font-size: 20rem; transform: translateX(-100%);" class="animated-element1">MARWAN</div>
+        <div style="font-size: 20rem; text-align: right; transform: translateX(100%);" class="animated-element2">MOUBAYED</div>
+        <div class="mx-32">
+            This portfolio serves as the homepage for The Odin Project, representing my inaugural endeavor in crafting a contemporary design accentuated by dynamic animations. 
+            Continuous improvement remains a fundamental ethos driving my work. Written by chatGPT
+        </div>
+
+        <footer class="flex-col space-y-16 mt-8 rounded-lg border border-black dark:border-white bg-gray-200" style="margin-bottom: 2rem; margin-right: 1rem; margin-left: 1rem; padding-top: 4rem; padding-bottom: 4rem;">
+            <div class="flex flex-col items-center justify-center bg-black mx-32 dark:bg-white rounded-lg" style="padding: 4rem 0 4rem 0;">
+                <h1 class="text-white text-2xl font-extrabold dark:text-black" style="margin-bottom: 1rem;">CONTACT ME</h1>
+                <p class="text-white dark:text-black" style="margin-bottom: 2rem;">Thank you for your interest. For inquiries, collaborations, or opportunities, please feel free to reach out. </p>
+                <div class="flex gap-8 w-full justify-center">
+                    <input type="text" id="email" name="email" placeholder="Enter Your Email Address"
+                    class="bg-white max-w-max focus:outline-none pl-6 py-3 pr-6 placeholder:text-slate-700 rounded-lg dark:border dark:border-black" style="width: 25%;"
+                    >
+                    <button class="border border-white rounded-lg text-white hover:bg-white hover:border-black transition-all duration-200" style="padding: 1rem 3rem;">SEND</button>
+                </div>
+            </div>
+            
+                
+            <div style="margin-left: 8rem; margin-right: 8rem; padding-left: 4rem; padding-right: 4rem;" class="flex justify-between items-center ">
+                <div class="flex flex-col shadow-2xl ring-4 bg-white rounded-lg" style="padding: 4rem;">
+                    <h1 class="font-extrabold dark:text-white text-2xl" style="margin-bottom: 2rem;">Contact Information</h1>
+                    <p class="text-sm text-gray-400">+961 00 00 00 (6AM - 10PM, Mon - Sun) (FAKE)</p>
+                    <p class="text-sm text-gray-400" style="margin-bottom: 2rem;">+961 11 11 11 (6AM - 10PM, Mon - Sun) (FAKE)</p>
+                    <p class="text-sm text-gray-400">moubayedmarwancoding@gmail.com</p>
+                </div>
+
+                <a href="#navigation"><i class='bx bx-up-arrow-alt text-2xl border border-black rounded-full' style="padding: 0.8rem; margin: 0 1rem 0 1rem;"></i></a>
+
+                <div class="flex flex-col shadow-xl ring-4 bg-white rounded-lg" style="padding: 4rem;">
+                    <h1 class="font-extrabold dark:text-white text-xl" style="margin-bottom: 2rem;">Socials</h1>
+                    <div class="flex items-center" style="margin-bottom: 1rem;">
+                        <i class='bx bxl-github' style="margin-right: 0.5rem;"></i>
+                        <p>Github</p>
+                    </div>
+
+                    <div class="flex items-center" style="margin-bottom: 1rem;">
+                        <i class='bx bxl-linkedin-square' style="margin-right: 0.5rem;"></i>
+                        <p>Linked in</p>
+                    </div>
+
+                    <div class="flex items-center" style="margin-bottom: 1rem;">
+                        <i class='bx bxl-twitter' style="margin-right: 0.5rem;"></i>
+                        <p>X</p>
+                    </div>
+                    
+                    <div class="flex items-center" style="margin-bottom: 1rem;">
+                        <i class='bx bxl-instagram' style="margin-right: 0.5rem;"></i>
+                        <p>Instagram</p>
+                    </div>
+
+                </div>
+
+                <a href="#navigation"><i class='bx bx-up-arrow-alt text-2xl border border-black rounded-full' style="padding: 0.8rem; margin: 0 1rem 0 1rem;"></i></a>
+
+                <div class="flex flex-col shadow-xl ring-4 bg-white rounded-lg" style="padding: 4rem;">
+                    <h1 class="font-extrabold dark:text-white text-2xl" style="margin-bottom: 2rem;">Explore</h1>
+                    <p class="text-sm text-gray-400" style="margin-bottom: 1rem;">ABOUT ME</p>
+                    <p class="text-sm text-gray-400" style="margin-bottom: 1rem;">SKILLS</p>
+                    <p class="text-sm text-gray-400" style="margin-bottom: 1rem;">PORTFOLIO</p>
+                    <p class="text-sm text-gray-400" style="margin-bottom: 1rem;">PROJECTS</p>
+                    <p class="text-sm text-gray-400" style="margin-bottom: 1rem;">CONTACT ME</p>
+                    <i class="font-extrabold">THIS TEXT IS JUST THERE TO MAKE THE TEXT BIGGER</i>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="flex justify-center" style="margin-bottom: 2rem;">&copy; 2024 Marwan Moubayed. All rights reserved.</div>
+
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 
     <script>
         const toggleDarkBtn = document.getElementById('toggleDark');
         toggleDarkBtn.addEventListener('click', () => {
             document.body.classList.toggle('dark');
         });
+
+
+        //GSAP
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                start: 'left',
+                end: 'right',
+                scrub: true,
+                markers: false
+            }
+        })
+
+        tl.to('.animated-element1', {
+            x: 600,
+        });
+
+        let tl2 = gsap.timeline({
+            scrollTrigger: {
+                start: 'left',
+                end: 'right',
+                scrub: true,
+                markers: false
+            }
+        }) 
+        
+        tl2.to('.animated-element2', {
+            x: -300,
+        })
+
+        //Lenis Scrolling
+        const lenis = new Lenis();
+        lenis.on('scroll', e => {
+            console.log(e);
+        });
+
+        function ref(time){
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
     </script>
 </body>
 </html>

@@ -42,5 +42,6 @@
         @apply shadow-2xl hover:-translate-y-2 transition-all duration-200 bg-black rounded-md flex justify-center ring-black p-4 font-extrabold
                w-full text-white
       }
-    
+
+      
   }
