@@ -37,11 +37,33 @@
     .group:not(:hover):before{background: black;}
     .group-hover:not(:hover):before{background: white;}
 
+  }
 
-      .skills-section{
-        @apply shadow-2xl hover:-translate-y-2 transition-all duration-200 bg-black rounded-md flex justify-center ring-black p-4 font-extrabold
-               w-full text-white
-      }
+  .skills-section{
+    @apply shadow-2xl hover:-translate-y-2 transition-all duration-200 bg-black rounded-md flex justify-center ring-black p-4 font-extrabold w-full text-white;
+  }
 
-      
+  .nav{
+    @apply cursor-pointer hover:bg-gray-200 transition-all duration-100 rounded-md p-2 min-w-max dark:hover:bg-white dark:hover:text-black;
+  }
+
+  .projects{
+    @apply shadow-2xl  ring-slate-900 flex items-center justify-center py-10 hover:-translate-y-2 transition-all duration-200 dark:text-black dark:bg-white dark:border-black dark:border;
+  }
+
+  .footer-input{
+    @apply bg-white max-w-max focus:outline-none pl-6 py-3 pr-6 placeholder:text-slate-700 rounded-lg dark:border dark:border-black min-w-max;
+  }
+
+  .footer-div{
+    @apply flex-col space-y-16 mt-8 rounded-lg border border-black dark:border-white bg-gray-200 py-16 mx-4 mb-8;
+  }
+
+  .footer-button{
+    @apply border border-white rounded-lg text-white hover:bg-white hover:border-black hover:text-black transition-all duration-200 py-4 px-12;
+  }
+
+  /*HEADER*/
+  .header-input{
+    @apply bg-gray-200 w-1/4 focus:outline-none pl-6 py-3 pr-6 placeholder:text-slate-700 rounded-full shrink-0;
   }
