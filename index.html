@@ -65,58 +65,60 @@
         </div>
     
         <!--SKILLS SECTION-->
-        <div class="flex gap-16 items-center py-10 justify-around mx-32 overflow-scroll">
-            <div class="flex-col space-y-10 text-center">
-                <div class="p-8 shadow-lg border border-black rounded-sm dark:border-white dark:text-white">
-                    <i class='bx bxl-html5 text-8xl'></i>
+        <div class="scroller mx-32">
+            <div class="flex gap-16 items-center py-10 justify-around tag-list scroller__inner">
+                <div class="flex-col space-y-10 text-center">
+                    <div class="p-8 shadow-lg border border-black rounded-sm dark:border-white dark:text-white">
+                        <i class='bx bxl-html5 text-8xl'></i>
+                    </div>
+        
+                    <p class="text-xl font-extrabold dark:text-white">HTML 5</p>
                 </div>
-    
-                <p class="text-xl font-extrabold dark:text-white">HTML 5</p>
-            </div>
-            
-            <div class="flex-col space-y-10 text-center">
-                <div class="p-8 shadow-lg border border-black rounded-sm dark:border-white dark:text-white">
-                    <i class='bx bxl-css3 text-8xl'></i>
+                
+                <div class="flex-col space-y-10 text-center">
+                    <div class="p-8 shadow-lg border border-black rounded-sm dark:border-white dark:text-white">
+                        <i class='bx bxl-css3 text-8xl'></i>
+                    </div>
+                    <p class="text-xl font-extrabold dark:text-white">CSS 3</p>
                 </div>
-                <p class="text-xl font-extrabold dark:text-white">CSS 3</p>
-            </div>
-            
-            <div class="flex-col space-y-10 text-center">
-                <div class="p-8 shadow-lg  border border-black rounded-sm dark:border-white dark:text-white">
-                    <i class='bx bxl-tailwind-css text-8xl'></i>
+                
+                <div class="flex-col space-y-10 text-center">
+                    <div class="p-8 shadow-lg  border border-black rounded-sm dark:border-white dark:text-white">
+                        <i class='bx bxl-tailwind-css text-8xl'></i>
+                    </div>
+        
+                    <p class="text-xl font-extrabold dark:text-white">TAILWIND CSS</p>
                 </div>
-    
-                <p class="text-xl font-extrabold dark:text-white">TAILWIND CSS</p>
-            </div>
-    
-            <div class="flex-col space-y-10 text-center">
-                <div class="p-8 shadow-lg  border border-black rounded-sm dark:border-white dark:text-white">
-                    <i class='bx bxl-github text-8xl'></i>
+        
+                <div class="flex-col space-y-10 text-center">
+                    <div class="p-8 shadow-lg  border border-black rounded-sm dark:border-white dark:text-white">
+                        <i class='bx bxl-github text-8xl'></i>
+                    </div>
+                    <p class="text-xl font-extrabold dark:text-white">GITHUB</p>
                 </div>
-                <p class="text-xl font-extrabold dark:text-white">GITHUB</p>
-            </div>
-    
-            <div class="flex-col space-y-10 text-center">
-                <div class="p-8 shadow-lg border border-black rounded-sm dark:border-white dark:text-white">
-                    <i class='bx bxl-git text-8xl'></i>
+        
+                <div class="flex-col space-y-10 text-center">
+                    <div class="p-8 shadow-lg border border-black rounded-sm dark:border-white dark:text-white">
+                        <i class='bx bxl-git text-8xl'></i>
+                    </div>
+                    <p class="text-xl font-extrabold dark:text-white">GIT</p>
                 </div>
-                <p class="text-xl font-extrabold dark:text-white">GIT</p>
-            </div>
-    
-            <div class="flex-col space-y-10 text-center">
-                <div class="p-8 shadow-lg  border border-black rounded-sm dark:border-white dark:text-white">
-                    <i class='bx bxl-javascript text-8xl'></i>
+        
+                <div class="flex-col space-y-10 text-center">
+                    <div class="p-8 shadow-lg  border border-black rounded-sm dark:border-white dark:text-white">
+                        <i class='bx bxl-javascript text-8xl'></i>
+                    </div>
+                    <p class="text-xl font-extrabold dark:text-white">JAVASCRIPT</p>
                 </div>
-                <p class="text-xl font-extrabold dark:text-white">JAVASCRIPT</p>
-            </div>
-    
-            <div class="flex-col space-y-10 text-center">
-                <div class="p-8 shadow-lg  border border-black rounded-sm dark:border-white dark:text-white">
-                    <i class='bx bxl-java text-8xl'></i>
+        
+                <div class="flex-col space-y-10 text-center">
+                    <div class="p-8 shadow-lg  border border-black rounded-sm dark:border-white dark:text-white">
+                        <i class='bx bxl-java text-8xl'></i>
+                    </div>
+                    <p class="text-xl font-extrabold dark:text-white">JAVA</p>
                 </div>
-                <p class="text-xl font-extrabold dark:text-white">JAVA</p>
+        
             </div>
-    
         </div>
     
         <!--PROJECTS SECTION INDICATOR-->
@@ -274,7 +276,30 @@
         lenis.raf(time * 1000)
         })
 
-        gsap.ticker.lagSmoothing(0)
+        gsap.ticker.lagSmoothing(0);
+
+
+        //SKILLS SCROLLER ANIMATION
+        const scrollers = document.querySelectorAll('.scroller');
+        if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+            addAnimation();
+        }
+
+        function addAnimation(){
+            scrollers.forEach(scroller => {
+                scroller.setAttribute('data-animated', true);
+
+                const scrollerInner = scroller.querySelector('.scroller__inner');
+                const scrollerInnerSkills = Array.from(scrollerInner.children);
+                
+
+                scrollerInnerSkills.forEach(skill => {
+                    const duplicatedSkill = skill.cloneNode(true);
+                    duplicatedSkill.setAttribute('aria-hidden', true);
+                    scrollerInner.appendChild(duplicatedSkill);
+                })
+            })
+        }
 
     </script>
 </body>
