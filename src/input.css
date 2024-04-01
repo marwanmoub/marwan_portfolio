@@ -72,7 +72,7 @@
   }
 
   .projects{
-    @apply shadow-2xl  ring-slate-900 flex items-center justify-center py-10 hover:-translate-y-2 transition-all duration-200 dark:text-black dark:bg-white dark:border-black dark:border;
+    @apply shadow-2xl  ring-slate-900 flex items-center justify-center py-10 hover:-translate-y-2 transition-all duration-200 dark:text-black dark:bg-white dark:border-black dark:border rounded-lg;
   }
 
   .footer-input{
