@@ -3173,6 +3173,10 @@ video {
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
 
+  .max-md\:p-6 {
+    padding: 1.5rem;
+  }
+
   .max-md\:p-8 {
     padding: 2rem;
   }
@@ -3189,6 +3193,11 @@ video {
   .max-md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .max-md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .max-md\:text-\[10rem\] {
