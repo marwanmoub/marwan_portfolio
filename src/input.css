@@ -61,18 +61,6 @@
       }
     }
 
-    @media (width <= 575px){
-
-    }
-
-    @media (width >= 576 and width <= 767px){
-
-    }
-
-    @media (width >= 768px and width <= 991px){
-      
-    }
-
   }
 
   .skills-section{
@@ -92,7 +80,7 @@
   }
 
   .footer-div{
-    @apply flex-col space-y-16 mt-8 rounded-lg border border-black dark:border-white bg-gray-200 py-16 mx-4 mb-8;
+    @apply flex-col space-y-16 mt-8 rounded-lg border border-black dark:border-white bg-gray-200 py-16 mx-4 mb-8 max-sm:space-y-8;
   }
 
   .footer-button{
