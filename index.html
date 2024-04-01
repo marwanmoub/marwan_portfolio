@@ -12,22 +12,21 @@
     <div class="font-mono dark:bg-black relative overflow-hidden"> <!--MAIN WRAPPER CLASS-->
 
         <!--HEADER SECTION-->
-        <header class="px-32 py-10 dark:bg-black">
-            <div class="flex justify-between items-center flex-shrink-0">
-                <p id="name" class="font-extrabold text-2xl dark:text-white">Marwan Moubayed</p>
+        <header class="px-32 py-10 dark:bg-black max-sm:px-8">
+            <div class="flex justify-between items-center flex-shrink-0 max-sm:flex-col max-sm:items-start">
+                <p id="name" class="font-extrabold text-2xl dark:text-white max-sm:text-[1rem]">Marwan Moubayed</p>
     
-                <input type="text" id="email" name="email" placeholder="Enter Your Email" class="header-input">
+                <input type="text" id="email" name="email" placeholder="Enter Your Email" class="header-input max-sm:hidden">
     
-                <button class="bg-gray-800 text-white rounded px-11 py-3 dark:bg-transparent dark:text-white dark:border-solid
-                dark:border dark:border-white" id="toggleDark">Dark</button>
+                <button class="header-dark-btn max-sm:py-2 max-sm:mr-6" id="toggleDark">Dark</button>
             </div>
     
             <div class="flex items-center mt-8 text-lg w-full">
                 <div>
-                    <p class="dark:text-white">MASTER THE FIELD</p>
+                    <p class="dark:text-white max-sm:hidden">MASTER THE FIELD</p>
                 </div>
     
-                <div class="ml-96 flex items-center translate-x-28 shrink dark:text-white" id="navigation">
+                <div class="ml-96 flex items-center translate-x-28 shrink dark:text-white max-sm:hidden" id="navigation">
                     <ul class="group dark:group-hover flex items-center gap-16 p-2">
                         <li class="nav">ABOUT ME</li>
                         <li class="nav">SKILLS</li>
@@ -41,19 +40,19 @@
         </header>
     
         <!--MAIN-->
-        <main class="bg-gray-200 px-32 pt-10 pb-40 mx-32 rounded-lg min-w-fit flex gap-16 dark:bg-[#0c0c0c]">
+        <main class="main-div max-sm:flex-col max-sm:px-8 max-sm:mx-8 max-sm:pb-8">
             <div class="flex-col space-y-16">
                 <div class="min-w-fit shadow-2xl hover:-translate-y-2 transition-all duration-200 bg-white rounded-md flex justify-center ring-black p-4 font-extrabold">ABOUT ME</div>
-                <h1 class="dark:text-white font-extrabold text-6xl min-w-fit">Hello, I'm Marwan Moubayed</h1>
+                <h1 class="dark:text-white font-extrabold text-6xl min-w-fit max-sm:text-2xl">Hello, I'm Marwan Moubayed</h1>
             </div>
     
             <div class="flex-col space-y-8">
-                <h1 class="font-extrabold text-3xl dark:text-white">Exemplary Software Engineer Poised for Success, Residing in Tripoli, Lebanon.</h1>
-                <p class="dark:text-white">An entrepreneurial programmer poised for success, driven by a business-oriented mindset and a determination to excel.</p>
+                <h1 class="font-extrabold text-3xl dark:text-white max-sm:text-xl">Exemplary Software Engineer Poised for Success, Residing in Tripoli, Lebanon.</h1>
+                <p class="dark:text-white max-sm:text-sm">An entrepreneurial programmer poised for success, driven by a business-oriented mindset and a determination to excel.</p>
 
                 <div class="flex gap-8">
-                    <button class="text-white p-6 bg-black rounded-lg text-xl dark:bg-white dark:text-black font-extrabold">CONTACT ME</button>
-                    <button class="text-black p-6 border border-black rounded-lg text-xl dark:bg-white dark:text-black font-extrabold">SEE MY WORK</button>
+                    <button class="contact-btn max-sm:p-3">CONTACT ME</button>
+                    <button class="smw-btn max-sm:p-3">SEE MY WORK</button>
                 </div>
             </div>
         </main>
@@ -150,9 +149,9 @@
         </div>
 
         <!--ANIMATION SECTION-->
-        <div class="animated-element1 dark:text-white text-[20rem] -translate-x-full max-sm:hidden">MARWAN</div>
-        <div class="animated-element2 dark:text-white text-right translate-x-full text-[20rem] max-sm:hidden">MOUBAYED</div>
-        <div class="mx-32 dark:text-white max-sm:mx-8 max-sm:text-xs max-sm:max-w-max">
+        <div class="animated-element1 dark:text-white text-[20rem] -translate-x-full max-sm:hidden max-md:text-[10rem]">MARWAN</div>
+        <div class="animated-element2 dark:text-white text-right translate-x-full text-[20rem] max-sm:hidden max-md:text-[10rem]">MOUBAYED</div>
+        <div class="mx-32 dark:text-white max-sm:mx-8 max-sm:text-xs max-sm:max-w-max max-md:text-sm max-md:max-w-max max-md:mx-8">
             This portfolio serves as the homepage for The Odin Project, representing my inaugural endeavor in crafting a contemporary design accentuated by dynamic animations. 
             Continuous improvement remains a fundamental ethos driving my work. Written by chatGPT
         </div>
@@ -161,19 +160,20 @@
         <!--FOOTER-->
         <footer class="footer-div">
 
-            <div class="flex flex-col items-center justify-center bg-black mx-32 dark:bg-white rounded-lg py-16 max-sm:mx-8 max-sm:px-8">
+            <div class="flex flex-col items-center justify-center bg-black mx-32 dark:bg-white rounded-lg py-16 max-sm:mx-8 max-sm:px-8 max-md:px-10 max-md:mx-10">
                 <h1 class="text-white text-2xl font-extrabold dark:text-black mb-4">CONTACT ME</h1>
-                <p class="text-white dark:text-black mb-8 max-sm:text-xs">Thank you for your interest. For inquiries, collaborations, or opportunities, please feel free to reach out. </p>
+                <p class="text-white dark:text-black mb-8 max-sm:text-xs max-md:text-sm">Thank you for your interest. For inquiries, collaborations, or opportunities, please feel free to reach out. </p>
 
-                <div class="flex gap-8 w-full justify-center max-sm:flex-col max-sm:space-y-4 max-sm:items-center">
+                <div class="flex gap-8 w-full justify-center max-sm:flex-col max-sm:space-y-4 max-sm:items-center max-md:flex-col max-md:items-center max-md:space-y-4">
                     <input type="text" id="email" name="email" placeholder="Enter Your Email" class="footer-input">
                     <button class="footer-button">SEND</button>
                 </div>
             </div>
             
                 
-            <div class="flex justify-between items-center mx-32 px-16 max-sm:mx-8 max-sm:px-4 max-sm:flex-col max-sm:space-y-8">
-                <div class="flex flex-col shadow-2xl bg-white rounded-lg p-16 max-sm:p-8">
+            <div class="flex justify-between items-center mx-32 px-16 max-sm:mx-8 max-sm:px-4 max-sm:flex-col max-sm:space-y-8
+            max-md:mx-8 max-md:px-4 max-md:flex-col max-md:space-y-8">
+                <div class="flex flex-col shadow-2xl bg-white rounded-lg p-16 max-sm:p-8 max-md:p-8">
                     <h1 class="font-extrabold dark:text-white text-2xl mb-8">Contact Information</h1>
                     <p class="text-sm text-black">+961 00 00 00 (6AM - 10PM, Mon - Sun) (FAKE)</p>
                     <p class="text-sm text-black mb-8">+961 11 11 11 (6AM - 10PM, Mon - Sun) (FAKE)</p>
@@ -208,7 +208,7 @@
 
                 <a  id="sendToTopBtn"><i class='bx bx-up-arrow-alt text-2xl border border-black rounded-full p-[0.8rem] mx-4'></i></a>
 
-                <div class="flex flex-col shadow-xl bg-white rounded-lg p-16 max-sm:p-8">
+                <div class="flex flex-col shadow-xl bg-white rounded-lg p-16 max-sm:p-8 max-md:p-9">
                     <h1 class="font-extrabold dark:text-white text-2xl mb-8">Explore</h1>
                     <p class="text-sm text-black mb-4">ABOUT ME</p>
                     <p class="text-sm text-black mb-4">SKILLS</p>
@@ -222,7 +222,7 @@
         </footer>
 
         <!--COPYRIGHT SECTION-->
-        <div class="flex justify-center mb-8 max-sm:text-xs">&copy; 2024 Marwan Moubayed. All rights reserved.</div>
+        <div class="flex justify-center mb-8 max-sm:text-xs max-md:text-sm">&copy; 2024 Marwan Moubayed. All rights reserved.</div>
 
     </div>
 

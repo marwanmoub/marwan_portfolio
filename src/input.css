@@ -91,3 +91,21 @@
   .header-input{
     @apply bg-gray-200 w-1/4 focus:outline-none pl-6 py-3 pr-6 placeholder:text-slate-700 rounded-full shrink-0;
   }
+
+  .header-dark-btn{
+    @apply bg-gray-800 text-white rounded px-11 py-3 dark:bg-transparent dark:text-white dark:border-solid
+    dark:border dark:border-white;
+  }
+
+  /*MAIN*/
+  .main-div{
+    @apply bg-gray-200 px-32 pt-10 pb-40 mx-32 rounded-lg min-w-fit flex gap-16 dark:bg-[#0c0c0c];
+  }
+
+  .contact-btn{
+    @apply text-white p-6 bg-black rounded-lg text-xl dark:bg-white dark:text-black font-extrabold;
+  }
+
+  .smw-btn{
+    @apply text-black p-6 border border-black rounded-lg text-xl dark:bg-white dark:text-black font-extrabold;
+  }
