@@ -3235,6 +3235,15 @@ video {
     padding-bottom: 0.75rem;
   }
 
+  .max-md\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
+  .max-md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .max-md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -3248,9 +3257,19 @@ video {
     font-size: 10rem;
   }
 
+  .max-md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .max-md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .max-md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -3346,6 +3365,11 @@ video {
 
   .max-sm\:text-\[1rem\] {
     font-size: 1rem;
+  }
+
+  .max-sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .max-sm\:text-sm {
