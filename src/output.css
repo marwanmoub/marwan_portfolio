@@ -3143,6 +3143,11 @@ video {
     margin-right: 2.5rem;
   }
 
+  .max-md\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .max-md\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
