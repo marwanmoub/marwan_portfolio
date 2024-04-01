@@ -61,6 +61,18 @@
       }
     }
 
+    @media (width <= 575px){
+
+    }
+
+    @media (width >= 576 and width <= 767px){
+
+    }
+
+    @media (width >= 768px and width <= 991px){
+      
+    }
+
   }
 
   .skills-section{
