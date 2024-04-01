@@ -180,7 +180,7 @@
                     <p class="text-sm text-black">moubayedmarwancoding@gmail.com</p>
                 </div>
 
-                <a href="#navigation"><i class='bx bx-up-arrow-alt text-2xl border border-black rounded-full p-[0.8rem] mx-4'></i></a>
+                <a  id="sendToTopBtn"><i class='bx bx-up-arrow-alt text-2xl border border-black rounded-full p-[0.8rem] mx-4'></i></a>
 
                 <div class="flex flex-col shadow-xl bg-white rounded-lg p-16">
                     <h1 class="font-extrabold dark:text-white text-xl mb-8">Socials</h1>
@@ -206,7 +206,7 @@
 
                 </div>
 
-                <a href="#navigation"><i class='bx bx-up-arrow-alt text-2xl border border-black rounded-full p-[0.8rem] mx-4'></i></a>
+                <a  id="sendToTopBtn"><i class='bx bx-up-arrow-alt text-2xl border border-black rounded-full p-[0.8rem] mx-4'></i></a>
 
                 <div class="flex flex-col shadow-xl bg-white rounded-lg p-16">
                     <h1 class="font-extrabold dark:text-white text-2xl mb-8">Explore</h1>
@@ -299,6 +299,18 @@
                     scrollerInner.appendChild(duplicatedSkill);
                 })
             })
+        }
+
+        const scrollToTopButtons = document.querySelectorAll('#sendToTopBtn');
+        scrollToTopButtons.forEach(button => {
+            button.addEventListener('click', scrollToTop);
+        })
+
+        function scrollToTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+            });
         }
 
     </script>
