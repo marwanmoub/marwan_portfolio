@@ -3103,6 +3103,11 @@ video {
 }
 
 @media not all and (min-width: 640px) {
+  .max-sm\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .max-sm\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -3148,6 +3153,11 @@ video {
   .max-sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .max-sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .max-sm\:px-8 {
