@@ -99,7 +99,7 @@
 
   /*MAIN*/
   .main-div{
-    @apply bg-gray-200 px-32 pt-10 pb-40 mx-32 rounded-lg min-w-fit flex gap-16 dark:bg-[#0c0c0c];
+    @apply bg-gray-200 px-24 pt-10 pb-20 mx-24 rounded-lg min-w-fit flex gap-16 dark:bg-[#0c0c0c];
   }
 
   .contact-btn{
