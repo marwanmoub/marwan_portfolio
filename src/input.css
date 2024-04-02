@@ -49,6 +49,7 @@
       mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent)
     }
 
+    
     .scroller[data-animated="true"] .scroller__inner{
       width: max-content;
       flex-wrap: nowrap;
@@ -80,7 +81,7 @@
   }
 
   .footer-div{
-    @apply flex-col space-y-16 mt-8 rounded-lg border border-black dark:border-white bg-gray-200 py-16 mx-4 mb-8 max-sm:space-y-8;
+    @apply flex-col space-y-16 mt-8 rounded-lg border border-black dark:border-white bg-gray-200 dark:bg-[#0c0c0c] py-16 mx-4 mb-8 max-sm:space-y-8;
   }
 
   .footer-button{
