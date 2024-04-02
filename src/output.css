@@ -3138,9 +3138,30 @@ video {
 }
 
 @media not all and (min-width: 1536px) {
+  .max-2xl\:m-auto {
+    margin: auto;
+  }
+
   .max-2xl\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .max-2xl\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .max-2xl\:hidden {
+    display: none;
+  }
+
+  .max-2xl\:h-\[370px\] {
+    height: 370px;
+  }
+
+  .max-2xl\:w-\[350px\] {
+    width: 350px;
   }
 
   .max-2xl\:max-w-max {
@@ -3148,13 +3169,57 @@ video {
     max-width: max-content;
   }
 
-  .max-2xl\:text-\[17rem\] {
-    font-size: 17rem;
+  .max-2xl\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .max-2xl\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .max-2xl\:justify-center {
+    justify-content: center;
+  }
+
+  .max-2xl\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .max-2xl\:p-8 {
+    padding: 2rem;
+  }
+
+  .max-2xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .max-2xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .max-2xl\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .max-2xl\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .max-2xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .max-2xl\:text-\[1\.2rem\] {
+    font-size: 1.2rem;
+  }
+
+  .max-2xl\:text-\[1\.3rem\] {
+    font-size: 1.3rem;
+  }
+
+  .max-2xl\:text-\[17rem\] {
+    font-size: 17rem;
   }
 }
 
