@@ -32,7 +32,7 @@
     
                 <button class="header-dark-btn max-sm:py-2 max-sm:mr-6 max-md:py-3 max-md:mr-7 max-md:mt-4 max-xl:py-4 max-xl:mr-8 max-xl:mt-5" id="toggleDark">Dark</button>
                 
-                <i class='bx bx-menu absolute text-[2rem] right-0' id="openIcon"></i>
+                <i class='bx bx-menu absolute text-[2rem] right-0 hide-class max-md:block' id="openIcon"></i>
 
             </div>
     
@@ -238,7 +238,7 @@
         </footer>
 
         <!--COPYRIGHT SECTION-->
-        <div class="flex justify-center mb-8 max-sm:text-xs max-md:text-sm">&copy; 2024 Marwan Moubayed. All rights reserved.</div>
+        <div class="flex justify-center mb-8 max-sm:text-xs max-md:text-sm dark:text-white">&copy; 2024 Marwan Moubayed. All rights reserved.</div>
 
     </div>
 
@@ -328,7 +328,7 @@
                 behavior: 'smooth' 
             });
         }
-        
+
         //HAMBURGER MENU
         const menu = document.getElementById('menu');
         const closeIcon = document.getElementById('closeIcon');

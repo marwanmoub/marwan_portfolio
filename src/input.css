@@ -56,6 +56,16 @@
       animation: scroll 10s linear infinite;
     }
 
+    .hide-class{
+      display: none !important;
+    }
+
+    @media (width < 768px){
+      .hide-class{
+        display: block !important;
+      }
+    }
+
     @keyframes scroll{
       to{
         transform: translate(calc(-50% - 4rem));

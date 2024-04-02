@@ -643,6 +643,16 @@ video {
   animation: scroll 10s linear infinite;
 }
 
+.hide-class{
+  display: none !important;
+}
+
+@media (width < 768px){
+  .hide-class{
+    display: block !important;
+  }
+}
+
 @keyframes scroll{
   to{
     transform: translate(calc(-50% - 4rem));
@@ -3467,6 +3477,10 @@ video {
 
   .max-md\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .max-md\:block {
+    display: block;
   }
 
   .max-md\:hidden {
