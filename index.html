@@ -9,37 +9,53 @@
 </head>
 <body>
     
-    <div class="font-mono dark:bg-black relative overflow-hidden"> <!--MAIN WRAPPER CLASS-->
+    <div class="font-mono dark:bg-black relative overflow-hidden h-full"> <!--MAIN WRAPPER CLASS-->
+
+        <nav id="menu" class="flex flex-col absolute justify-around bg-white items-center md:hidden w-full h-[100vh] z-10 -translate-x-full">
+            <i id="closeIcon" class='bx bx-x text-5xl my-8 cursor-pointer max-w-min'></i>
+            <ul class="flex flex-col p-10 md:hidden space-y-16">
+                <li class="nav text-4xl"><a href="#aboutMe">ABOUT ME</a></li>
+                <li class="nav text-4xl"><a href="#skillsSec">SKILLS</a></li>
+                <li class="nav text-4xl"><a href="#">PORTFOLIO</a></li>
+                <li class="nav text-4xl"><a href="#projectsSec">PROJECTS</a></li>
+                <li class="nav text-4xl"><a href="#footerSec">CONTACT ME</a></li>
+            </ul>
+            <div class="flex justify-center mb-8 max-sm:text-sm max-md:text-sm">&copy; 2024 Marwan Moubayed. All rights reserved.</div>
+        </nav>
 
         <!--HEADER SECTION-->
-        <header class="px-24 py-10 dark:bg-black max-sm:px-8 max-md:px-8 max-xl:px-8 max-2xl:px-10">
-            <div class="flex justify-between items-center flex-shrink-0 max-sm:flex-col max-sm:items-start max-md:flex-col max-md:items-start">
+        <header class=" px-24 py-10 dark:bg-black max-sm:px-8 max-md:px-8 max-xl:px-8 max-2xl:px-10">
+            <div class="flex relative justify-between items-center flex-shrink-0 max-sm:flex-col max-sm:items-start max-md:flex-col max-md:items-start">
                 <p id="name" class="font-extrabold text-2xl dark:text-white max-sm:text-[1rem] max-md:text-[1.3rem]">Marwan Moubayed</p>
     
                 <input type="text" id="email" name="email" placeholder="Enter Your Email" class="header-input max-sm:hidden max-md:hidden max-xl:hidden">
     
                 <button class="header-dark-btn max-sm:py-2 max-sm:mr-6 max-md:py-3 max-md:mr-7 max-md:mt-4 max-xl:py-4 max-xl:mr-8 max-xl:mt-5" id="toggleDark">Dark</button>
+                
+                <i class='bx bx-menu absolute text-[2rem] right-0' id="openIcon"></i>
+
             </div>
     
             <div class="flex items-center mt-8 text-lg w-full">
                 <div class="flex m-auto items-center shrink dark:text-white max-sm:hidden max-md:hidden max-lg:ml-0 max-xl:ml-0 max-xl:translate-x-0 max-2xl:translate-x-0  max-2xl:m-auto" id="navigation">
-                    <ul class="group dark:group-hover flex items-center gap-16 p-2 max-2xl:justify-center">
-                        <li class="nav max-lg:text-[1rem]">ABOUT ME</li>
-                        <li class="nav max-lg:text-[1rem]">SKILLS</li>
-                        <li class="nav max-lg:text-[1rem]">PORTFOLIO</li>
-                        <li class="nav max-lg:text-[1rem]">PROJECTS</li>
-                        <li class="nav max-lg:text-[1rem]">CONTACT ME</li>
+                    <ul class="group dark:group-hover flex items-center gap-16 p-2">
+                        <li class="nav max-lg:text-[1rem]" id="aboutMeLi"><a href="#aboutMe">ABOUT ME</a></li>
+                        <li class="nav max-lg:text-[1rem]" id="skillsLi"><a href="#skillsSec">SKILLS</a></li>
+                        <li class="nav max-lg:text-[1rem]" id="portfolioLi"><a href="#">PORTFOLIO</a></li>
+                        <li class="nav max-lg:text-[1rem]" id="projectsLi"><a href="#projectsSec">PROJECTS</a></li>
+                        <li class="nav max-lg:text-[1rem]" id="footerLi"><a href="#footerSec">CONTACT ME</a></li>
                       </ul>
                 </div>
     
             </div>
+
         </header>
     
         <!--MAIN-->
         <main class="main-div max-sm:flex-col max-sm:px-8 max-sm:mx-8 max-sm:pb-8 max-md:px-8 max-md:mx-8 max-md:pb-8 max-md:flex-col max-xl:px-8 max-xl:mx-8 max-xl:pb-8 max-xl:flex-col
         max-2xl:px-10 max-2xl:mx-10 max-2xl:pb-10">
             <div class="flex-col space-y-16">
-                <div class="min-w-fit shadow-2xl hover:-translate-y-2 transition-all duration-200 bg-white rounded-md flex justify-center ring-black p-4 font-extrabold">ABOUT ME</div>
+                <div class="min-w-fit shadow-2xl hover:-translate-y-2 transition-all duration-200 bg-white rounded-md flex justify-center ring-black p-4 font-extrabold" id="aboutMe">ABOUT ME</div>
                 <div class="max-xl:flex max-xl:justify-center">
                     <h1 class="dark:text-white font-extrabold text-4xl min-w-fit max-sm:text-2xl max-md:text-3xl max-xl:text-2xl max-xl:w-[300px] max-2xl:w-[350px] max-2xl:text-4xl">Hello, I'm Marwan Moubayed</h1>
                 </div>
@@ -50,7 +66,7 @@
                 <p class="dark:text-white max-sm:text-sm max-md:text-lg">An entrepreneurial programmer poised for success, driven by a business-oriented mindset and a determination to excel.</p>
 
                 <div class="flex gap-8 max-xl:justify-center">
-                    <button class="contact-btn max-sm:p-2 max-sm:text-sm max-md:p-4 max-md:text-lg:">CONTACT ME</button>
+                    <button class="contact-btn max-sm:p-4 max-sm:text-sm max-md:p-4 max-md:text-lg:">CONTACT ME</button>
                     <button class="smw-btn max-sm:p-2 max-sm:text-sm max-md:p-4 max-md:text-lg">SEE MY WORK</button>
                 </div>
             </div>
@@ -59,7 +75,7 @@
 
         <!--SKILLS SECTION INDICATOR-->
         <div class="mx-24 flex min-w-fit items-center mt-10 max-sm:mx-6 max-md:mx-6 max-xl:mx-8 max-2xl:mx-10">
-            <div class="skills-section dark:bg-white border dark:border-black dark:text-black">SKILLS</div>
+            <div class="skills-section dark:bg-white border dark:border-black dark:text-black" id="skillsSec">SKILLS</div>
         </div>
     
         <!--SKILLS SECTION-->
@@ -121,7 +137,7 @@
     
         <!--PROJECTS SECTION INDICATOR-->
         <div class="flex items-center mt-10 px-24 max-sm:px-6 max-md:px-6 max-xl:px-8 max-2xl:px-10" id="projectHeader">
-            <div class="skills-section py-10 dark:bg-white border dark:border-black dark:text-black">The Odin PROJECTS</div>
+            <div class="skills-section py-10 dark:bg-white border dark:border-black dark:text-black" id="projectsSec">The Odin PROJECTS</div>
         </div>
 
         <!--Projects Section-->
@@ -158,7 +174,7 @@
 
 
         <!--FOOTER-->
-        <footer class="footer-div">
+        <footer class="footer-div" id="footerSec">
 
             <div class="flex flex-col items-center justify-center bg-black mx-24 dark:bg-gray-200 rounded-lg py-16 max-sm:mx-8 max-sm:px-8 max-md:px-10 max-md:mx-10 max-xl:px-14 max-xl:mx-14 max-2xl:px-20 max-2xl:mx-20">
                 <h1 class="text-white text-2xl font-extrabold dark:text-black mb-4">CONTACT ME</h1>
@@ -172,9 +188,9 @@
             
                 
             <div class="flex justify-between items-center mx-24 px-16 max-sm:mx-8 max-sm:px-4 max-sm:flex-col max-sm:space-y-8
-            max-md:mx-8 max-md:px-4 max-md:flex-col max-md:space-y-8 max-xl:mx-8 max-xl:px-4 max-lg:flex-col max-lg:mx-8 max-lg:px-4 max-lg:space-y-10 max-2xl:mx-10 max-2xl:px-5 ">
-                <div class="flex flex-col shadow-2xl bg-white rounded-lg p-16 max-sm:p-8 max-md:p-8 max-xl:p-8 max-lg:p-8 max-lg:w-1/2 max-2xl:p-8 max-2xl:h-[370px] dark:bg-gray-200">
-                    <h1 class="font-extrabold dark:text-black text-2xl mb-8 max-xl:text-[1rem] max-lg:text-[1rem] max-2xl:text-[1.3rem]">Contact Information</h1>
+            max-md:mx-8 max-md:px-4 max-md:flex-col max-md:space-y-8 max-xl:mx-8 max-xl:px-4 max-lg:flex-col max-lg:mx-8 max-lg:px-4 max-lg:space-y-10 max-2xl:mx-10 max-2xl:px-5">
+                <div class="flex flex-col shadow-2xl bg-white rounded-lg p-16 max-sm:w-full max-sm:p-8 max-md:p-8 max-xl:p-8 max-lg:p-8 max-lg:w-1/2 max-2xl:p-8 max-2xl:h-[370px] dark:bg-gray-200 max-md:w-full">
+                    <h1 class="font-extrabold dark:text-black text-2xl mb-8 max-xl:text-[1rem] max-lg:text-[1rem] max-2xl:text-[1.3rem] max-md:text-2xl">Contact Information</h1>
                     <p class="text-sm text-black">+961 00 00 00 (6AM - 10PM, Mon - Sun) (FAKE)</p>
                     <p class="text-sm text-black mb-8">+961 11 11 11 (6AM - 10PM, Mon - Sun) (FAKE)</p>
                     <p class="text-sm text-black">moubayedmarwancoding@gmail.com</p>
@@ -182,8 +198,8 @@
 
                 <a  id="sendToTopBtn"><i class='bx bx-up-arrow-alt text-2xl border border-black rounded-full p-[0.8rem] mx-4 max-xl:p-[0.5rem] max-xl:mx-3 max-lg:mx-3 max-lg:p-[0.5rem] dark:text-gray-200 dark:border-gray-200'></i></a>
 
-                <div class="flex flex-col shadow-xl bg-white rounded-lg p-16 max-xl:mx-8 max-xl:px-8 max-xl:py-4 max-lg:p-8 max-lg:w-1/2 max-2xl:h-[370px] max-2xl:p-10 dark:bg-gray-200">
-                    <h1 class="font-extrabold dark:text-black text-xl mb-8 max-xl:text-[1rem] max-lg:text-[1rem] max-2xl:text-[1.3rem]">Socials</h1>
+                <div class="flex flex-col shadow-xl bg-white rounded-lg p-16 max-xl:mx-8 max-xl:px-8 max-xl:py-4 max-lg:p-8 max-lg:w-1/2 max-2xl:h-[370px] max-2xl:p-10 dark:bg-gray-200 max-sm:w-full max-md:w-full">
+                    <h1 class="font-extrabold dark:text-black text-xl mb-8 max-xl:text-[1rem] max-lg:text-[1rem] max-2xl:text-[1.3rem] max-md:text-2xl">Socials</h1>
                     <div class="flex items-center mb-4">
                         <i class='bx bxl-github mr-[0.5rem]'></i>
                         <p>Github</p>
@@ -208,8 +224,8 @@
 
                 <a  id="sendToTopBtn"><i class='bx bx-up-arrow-alt text-2xl border border-black rounded-full p-[0.8rem] mx-4 max-xl:p-[0.5rem] max-xl:mx-3 dark:text-gray-200 dark:border-gray-200'></i></a>
 
-                <div class="flex flex-col shadow-xl bg-white rounded-lg p-16 max-sm:p-8 max-md:p-9 max-xl:p-8 max-lg:p-8 max-lg:w-1/2 max-2xl:h-[370px] max-2xl:p-10 dark:bg-gray-200">
-                    <h1 class="font-extrabold dark:text-black text-2xl mb-8 max-xl:text-[1rem] max-lg:text-[1rem] max-2xl:text-[1.3rem]">Explore</h1>
+                <div class="flex flex-col shadow-xl bg-white rounded-lg p-16 max-sm:p-8 max-md:p-9 max-xl:p-8 max-lg:p-8 max-lg:w-1/2 max-2xl:h-[370px] max-2xl:p-10 dark:bg-gray-200 max-sm:w-full max-md:w-full">
+                    <h1 class="font-extrabold dark:text-black text-2xl mb-8 max-xl:text-[1rem] max-lg:text-[1rem] max-2xl:text-[1.3rem] max-md:text-2xl">Explore</h1>
                     <p class="text-sm text-black mb-4">ABOUT ME</p>
                     <p class="text-sm text-black mb-4">SKILLS</p>
                     <p class="text-sm text-black mb-4">PORTFOLIO</p>
@@ -312,7 +328,22 @@
                 behavior: 'smooth' 
             });
         }
-
+        
+        //HAMBURGER MENU
+        const menu = document.getElementById('menu');
+        const closeIcon = document.getElementById('closeIcon');
+    
+        closeIcon.addEventListener('click', () => {
+            gsap.to(menu, {x: '-100%' , duration: 0.3 });
+            body.classList.remove('nav-open');
+        });
+    
+        const openIcon = document.getElementById('openIcon');
+        openIcon.addEventListener('click', () => {
+            gsap.to(menu, { x: 0, duration: 0.3 });
+            body.classList.add('nav-open');
+        });
+        
     </script>
 </body>
 </html>
